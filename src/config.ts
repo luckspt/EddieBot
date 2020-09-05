@@ -40,6 +40,10 @@ export default {
   OPENSOURCE_JOB_CRON_TIME: process.env.OPENSOURCE_JOB_CRON_TIME || '0 14 * * *' // Default time is everyday at 2pm
 };
 
+export function isDevelopment(): boolean {
+  return process.env.NODE_ENV !== 'production';
+}
+
 // Possible values for user subscriptions
 export enum UserSubscriptions {
   OPEN_SOURCE = 'OPENSOURCE'
