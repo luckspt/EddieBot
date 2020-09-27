@@ -2,7 +2,7 @@
   "service": "eddiebot-nodejs",
 
   // Install ESLint, Prettier etc to keep code tidy.
-  "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+  "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "toba.vsfire"],
 
   "dockerComposeFile": "../docker-compose.yml",
 
