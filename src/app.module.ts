@@ -4,6 +4,9 @@ import { DiscordModule } from 'discord-nestjs';
 import { AppService } from './app.service';
 import { DiscordConfigService } from './environment/discord-config.service';
 import { AlexModule } from './alexjs/alex.module';
+import { VersionModule } from './version/version.module';
+import { CheckImageModule } from './check-image/check-image.module';
+import { TokenModule } from './token/token.module';
 
 @Module({
   imports: [
@@ -12,6 +15,9 @@ import { AlexModule } from './alexjs/alex.module';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
+    VersionModule,
+    CheckImageModule,
+    TokenModule,
   ],
   providers: [AppService, DiscordConfigService],
 })
